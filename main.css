@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 10px 25px;
+}
+
+header {
+    display: flex;
+    padding: 16px 0;
+    background-color: #bb1414;
+    color: #ecf0f1;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    padding: 16px;
+}
+
+section p{
+    margin-bottom: 8px;
+    padding: 16px;
+}
+
+section .store-Inside {
+    max-width: 45%;
+}
+
+.product-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    width: calc(33.33% - 20px); 
+    margin-right: 20px;
+    text-align: center;
+}
+
+.product p {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.product button {
+    padding: 7px;
+    margin-bottom: 20px;
+    background-color: rgb(74, 119, 5);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.product-image img {
+    width: 300px; 
+    height: 300px; 
+    margin-right: 20px; 
+    display: inline;
+} 
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: #b31515;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #about {
+        font-size: 13px;
+    }
+
+    .product {
+        width: 100%; 
+        margin-right: 0; 
+    }
+
+    #contact .container {
+        display: block;
+    }
+
+    .contact-methods {
+        flex-direction: column;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .product {
+        width: calc(50% - 20px); 
+    }
+
+    #about {
+        font-size: 13px;
+    }
+
+    #contact .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-methods {
+        flex-direction: column;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        width: 100%;
+        max-width: 320px;
+    }
+
+}
+
+
+
+
+
